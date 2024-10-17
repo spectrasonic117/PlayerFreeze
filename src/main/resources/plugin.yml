@@ -1,0 +1,19 @@
+name: PlayerFreeze
+version: '1.0.0'
+main: com.spectrasonic.playerFreeze.PlayerFreeze
+api-version: '1.21'
+author: Spectrasonic
+commands:
+  freeze:
+    description: Freeze a player or all players
+    usage: /freeze <player> | /freeze all | /freeze version
+  unfreeze:
+    description: Unfreeze a player or all players
+    usage: /unfreeze <player> | /unfreeze all
+permissions:
+  playerfreeze.bypass:
+    description: Allows players to bypass freezing
+    default: false
+  playerfreeze.admin:
+    description: Allows player to use freeze/unfreeze commands
+    default: op
