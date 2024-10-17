@@ -32,6 +32,7 @@ public class FreezeCommand implements CommandExecutor {
 
         if (args[0].equalsIgnoreCase("version")) {
             sender.sendMessage("PlayerFreeze version: " + plugin.getVersion());
+            sender.sendMessage("Developed by: Spectrasonic");
             return true;
         }
 
