@@ -34,7 +34,7 @@ public class PlayerFreeze extends JavaPlugin {
 
         // Enable
         getServer().getConsoleSender().sendMessage(divider);
-        getServer().getConsoleSender().sendMessage(prefix + ChatColor.GREEN + "GiveHead plugin enabled!");
+        getServer().getConsoleSender().sendMessage(prefix + ChatColor.GREEN + pluginName + " plugin enabled!");
         getServer().getConsoleSender().sendMessage(prefix + ChatColor.LIGHT_PURPLE + "Version: " + ChatColor.AQUA + pluginVersion);
         getServer().getConsoleSender().sendMessage(prefix + ChatColor.GOLD + "Developed by " + ChatColor.RED + pluginAuthor);
         getServer().getConsoleSender().sendMessage(divider);
