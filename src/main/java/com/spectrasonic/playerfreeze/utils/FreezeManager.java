@@ -1,6 +1,7 @@
 package com.spectrasonic.playerfreeze.utils;
 
 import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
 import org.bukkit.Sound;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
@@ -18,13 +19,13 @@ public class FreezeManager {
 
     public void freezePlayer(Player player) {
         frozenPlayers.add(player);
-        player.sendMessage("You have been frozen!");
+        player.sendMessage(ChatColor.AQUA + "You have been frozen!");
         player.playSound(player.getLocation(), Sound.BLOCK_ANVIL_LAND, 1.0f, 1.0f);
     }
 
     public void unfreezePlayer(Player player) {
         frozenPlayers.remove(player);
-        player.sendMessage("You have been unfrozen!");
+        player.sendMessage(ChatColor.GOLD + "You have been unfrozen!");
         player.playSound(player.getLocation(), Sound.BLOCK_ANVIL_BREAK, 1.0f, 1.0f);
     }
 
@@ -36,7 +37,7 @@ public class FreezeManager {
                 count++;
             }
         }
-        sender.sendMessage("Frozen " + count + " player(s).");
+        sender.sendMessage(ChatColor.AQUA + "Froze " + count + " player(s).");
     }
 
     public void unfreezeAllPlayers(CommandSender sender) {
@@ -44,6 +45,6 @@ public class FreezeManager {
         for (Player player : new HashSet<>(frozenPlayers)) {
             unfreezePlayer(player);
         }
-        sender.sendMessage("Unfroze " + count + " player(s).");
+        sender.sendMessage(ChatColor.GOLD + "Unfroze " + count + " player(s).");
     }
 }
