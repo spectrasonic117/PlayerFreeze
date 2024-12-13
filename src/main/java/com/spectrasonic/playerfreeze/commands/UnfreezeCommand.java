@@ -1,6 +1,6 @@
 package com.spectrasonic.playerfreeze.commands;
 
-import com.spectrasonic.playerfreeze.PlayerFreeze;
+import com.spectrasonic.playerfreeze.Main;
 import com.spectrasonic.playerfreeze.utils.FreezeManager;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -13,7 +13,7 @@ public class UnfreezeCommand implements CommandExecutor {
 
     private final FreezeManager freezeManager;
 
-    public UnfreezeCommand(PlayerFreeze playerFreeze, FreezeManager freezeManager) {
+    public UnfreezeCommand(Main playerFreeze, FreezeManager freezeManager) {
         this.freezeManager = freezeManager;
     }
 

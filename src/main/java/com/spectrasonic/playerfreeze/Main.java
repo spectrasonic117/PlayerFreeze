@@ -10,7 +10,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.Objects;
 
-public class PlayerFreeze extends JavaPlugin {
+public class Main extends JavaPlugin {
 
     // Variables
     private static final String divider = "------------------------------";

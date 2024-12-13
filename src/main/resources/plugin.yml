@@ -1,6 +1,6 @@
 name: PlayerFreeze
-version: '1.0.0'
-main: com.spectrasonic.playerFreeze.PlayerFreeze
+version: '${version}'
+main: com.spectrasonic.playerfreeze.Main
 api-version: '1.21'
 author: Spectrasonic
 commands:
